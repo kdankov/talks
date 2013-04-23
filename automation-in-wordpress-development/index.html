@@ -10,7 +10,10 @@
 	<!-- Code Prettifier: -->
 	<link href="/impress/css/highlight/solarized_light.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="/impress/js/highlight.pack.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<script>
+		hljs.tabReplace = '    ';
+		hljs.initHighlightingOnLoad();
+	</script>
 
 	<!-- Impress.js Theme -->
 	<link href="/impress/css/styles.css" rel="stylesheet" />
@@ -70,7 +73,7 @@
 			<h2>Защо ви ги казвам тези неща?</h2>
 
 			<ol>
-				<li>За да обясня че не съм <em>Програмист</em>.</li>
+				<li>За да обясня че <strong>не</strong> съм <em>Програмист</em>.</li>
 				<li>Нещата, за които ще говоря може да изглеждат сложни, но не са!</li>
 				<li>Контекст</li>
 			</ol>
@@ -164,7 +167,7 @@
 
 			<ul>
 				<li>Увеличена производителност</li>
-				<li>Предвидимо ниво на кечеството</li>
+				<li>Предвидимо ниво на качеството</li>
 				<li>Стриктно следване на установените процеси</li>
 			</ul>
 
@@ -173,13 +176,16 @@
 				<li>
 					Мотивация
 					<ul>
-						<li>Колко умен се чувствам когато завърша нещо такова.</li>
+						<li>Колко умен се чувствам когато завърша нещо такова</li>
+						<li>Bragging rights</li>
+						<li>Приличаш на "НИНДЖА"</li>
 					</ul>
 				</li>
 				<li>
-					Научаване на някакви неща. 
+					Научаване на нови неща. 
 					<ul>
 						<li>Излизането от зоната на комфорта.</li>
+						<li>Комуникация с <em>Програмисти</em></li>
 					</ul>
 				</li>
 			</ol>
@@ -201,26 +207,7 @@
 				<li>Още веднъж!</li>
 			</ul>
 
-		</div>
-		<div class="step"  data-x="4000" data-y="3000">
-
-			<hgroup>
-				<h6>Автоматизация</h6>
-				<h3>Няма безплатен обяд!</h3>
-			</hgroup>
-
 			<p>Сега вече, може да помислите дали това нещо ще го правите и за напред. Ако отговорът е да, седнете и направете списък на стъпките и преценете колко време ще ви отнеме да автоматизирате.</p>
-
-		</div>
-		<div class="step" data-x="5000" data-y="3000">
-
-			<hgroup>
-				<h6>Автоматизация</h6>
-				<h3>Няма безплатен обяд!</h3>
-			</hgroup>
-
-			<p>Сега вече, може да помислите дали това нещо ще го правите и за напред. Ако отговорът е да, седнете и направете списък на стъпките и преценете колко време ще ви отнеме да автоматизирате.</p>
-
 		</div>
 		<div class="step" data-x="0" data-y="4000">
 
@@ -247,9 +234,9 @@
 				<li>Инсталиране WordPress</li>
 				<li>Копиране, конфигурация и активиране на нова тема</li>
 				<li>Отваряне на файловете от темата в текстов редактор</li>
-				<li>Други (SASS &amp; Compass)</li>
+				<li>Други ... (SASS &amp; Compass)</li>
 			</ol>
-			<p>Сега вече мога да започна работа.</p>
+			<p>Вече мога да започна работа.</p>
 		</div>
 		<div class="step"  data-x="2000" data-y="4000">
 
@@ -305,10 +292,19 @@
 
 			<h3>С какви инструменти?</h3>
 
-			<ul>
-				<li>Terminal (bash)</li>
-				<li>Sequel Pro (MySQL client)</li>
-				<li>MacVim (Text editor)</li>
+			<ul class="icons">
+				<li>
+					<img src="images/icons/terminal.png">
+					Terminal <span>(bash)</span>
+				</li>
+				<li>
+					<img src="images/icons/sequelpro.png">
+					Sequel Pro <span>(MySQL client)</span>
+				</li>
+				<li>
+					<img src="images/icons/macvim.png">
+					MacVim <span>(Text editor)</span>
+				</li>
 			</ul>
 
 		</div>
@@ -320,19 +316,70 @@
 			</hgroup>
 
 			<h3>Забелязахте ли общите неща?</h3>
-			<ul>
-				<li>Terminal (bash)</li>
-			</ul>
+			<p>Всичко може да се сведе до редактиране/създаване на файлове и писане на команди в конзолата.</p>
+			<p>Редактирането и създаването на файлове също можем да го правим в конзолата</p>
+			<p>Всяка стъпка от процеса може да бъде направена в Terminal (bash)</p>
 
 		</div>
 		<div class="step" data-x="7000" data-y="4000">
 
 			<hgroup>
 				<h6>Разработка на теми &raquo; Създаване на нов сайт</h6>
-				<h2>Забелязахте ли общите неща?</h2>
+				<h2>wp-install</h2>
 			</hgroup>
 
-			<p>Всяка стъпка от процеса може да бъде направена в Terminal (bash)</p>
+			<pre>
+<code class="bash">$ wp-install portfolio
+
+Virtual Host &amp; Server configuration ...
+
+--- hosts file updated.
+--- vhost file created.
+--- Apache restarted.
+
+Virtual Host &amp; Server configuration - Finished! 
+
+...
+</code>
+			</pre>
+
+		</div>
+		<div class="step" data-x="8000" data-y="4000">
+
+			<hgroup>
+				<h6>Разработка на теми &raquo; Създаване на нов сайт</h6>
+				<h2>wp-install</h2>
+			</hgroup>
+
+			<pre>
+<code class="bash">...
+
+Installing WordPress ...
+
+--- MySQL server check passed: running
+--- getting the latest WordPress and extracting files.
+--- wp-content folder moved outside wordpress folder.
+--- wp-config created.
+--- index.php file created.
+--- database &amp; user created.
+--- WordPress database install &amp; admin user created.
+--- default development theme created and activated. 
+
+WordPress installation &amp; configuration - Finished! 
+</code>
+			</pre>
+
+		</div>
+		<div class="step" data-x="9000" data-y="4000">
+
+			<hgroup>
+				<h6>Разработка на теми &raquo; Създаване на нов сайт</h6>
+				<h2>wp-install</h2>
+			</hgroup>
+
+			<h3>Спазване на добри практики</h3>
+
+			<p>Пример: Разделяне на нашите файлове и системните файлове на WordPress, които подлежат на промяна</p>
 
 		</div>
 		<div class="step" data-x="0" data-y="5000">
@@ -357,7 +404,7 @@
 			
 			<hgroup>
 				<h6>Поддръжка на теми</h6>
-				<h2>Automatic deployment</h2>
+				<h2>Automated deployment</h2>
 			</hgroup>
 
 			<h4>Качване на промени в GitHub</h4>
@@ -369,6 +416,124 @@ $ git push
 </code>
 			</pre>
 
+
+		</div>
+		<div class="step" data-x="3000" data-y="5000">
+			
+			<hgroup>
+				<h6>Поддръжка на теми</h6>
+				<h2>Automated deployment</h2>
+			</hgroup>
+
+			<h4>Настройки в GitHub</h4>
+			<img src="images/github-config.png" class="banner">
+
+
+		</div>
+		<div class="step" data-x="4000" data-y="5000">
+
+			<hgroup>
+				<h6>Поддръжка на теми</h6>
+				<h2>Automated deployment</h2>
+			</hgroup>
+
+			<h4>deploy.php</h4>
+<pre><code class="php">&lt;?php
+
+	// Are we getting the 'payload' json data via POST request?
+	// If not it will terminate the scritp.
+	try
+	{
+		$payload = json_decode($_POST['payload']);
+	}
+	catch(Exception $e)
+	{
+		if($debug) { echo 'No payload data'; }
+		exit(0);
+	}
+
+...
+</code>
+</pre>
+		</div>	
+		<div class="step" data-x="5000" data-y="5000">
+
+			<hgroup>
+				<h6>Поддръжка на теми</h6>
+				<h2>Automated deployment</h2>
+			</hgroup>
+
+			<h4>deploy.php</h4>
+<pre><code class="php">...
+
+	// Save the current directory state 
+	// change to the needed folder
+	$dir = getcwd();
+	chdir('[folder needed]');
+
+	// Check if there were any commits in the master branch
+	if ($payload->ref == 'refs/heads/master'){
+		exec('./deploy.sh 2>&1', $output);
+	}
+
+	// Get back to the original dir
+	chdir($dir);
+
+?&gt;
+</code>
+</pre>
+		</div>
+		<div class="step" data-x="6000" data-y="5000">
+
+			<hgroup>
+				<h6>Поддръжка на теми</h6>
+				<h2>Automated deployment</h2>
+			</hgroup>
+
+			<h4>deploy.sh</h4>
+<pre><code class="bash"># go to the Git repository root
+cd [some-folder]
+
+# Get the latest changes from GitHub
+git pull
+
+# Remove compiled CSS files
+rm css/*.css
+
+# Recompile CSS from SASS files
+compass compile --output-style compressed --force
+
+# Any other build operations you might need
+</code>
+</pre>
+		</div>
+		<div class="step" data-x="7000" data-y="5000">
+
+			<hgroup>
+				<h6>Поддръжка на теми</h6>
+				<h2>Automated deployment</h2>
+			</hgroup>
+
+			<h4>Готово!</h4>
+			<p>В момента в който push'нете промени в master branch'а сайта ще се обнови автоматично.</p>
+
+		</div>
+		<div class="step" data-x="8000" data-y="5000">
+
+			<hgroup>
+				<h6>Поддръжка на теми</h6>
+				<h2>Easy project switching</h2>
+			</hgroup>
+
+			<h4>Consular & Bash aliases</h4>
+			<pre><code class="bash">edit portfolio</code></pre>
+			
+			<ul>
+				<li>Open Terminal tab with the project directory and run <code>git status</code></li>
+				<li>Open another Terminal tab and initialize <code>compass watch</code></li>
+				<li>Open the main SASS file in text editor of choice.(MacVim)</li>
+				<li>Open the project in all modern browsers. (Safari, Chrome, Firefox)</li>
+			</ul>
 
 		</div>
 		<div class="step" data-x="0" data-y="6000">
@@ -393,6 +558,41 @@ $ git push
 				<dt>Vim Config<sup>advanced</sup></dt>
 				<dd>http://github.com/kdankov/vim</dd>
 			</dl>
+
+		</div>
+		<div class="step"  data-x="2000" data-y="6000">
+
+			<hgroup>
+				<h6>Демонстрация</h6>
+				<h2>Инструменти</h2>
+			</hgroup>
+
+			<ul class="icons">
+				<li>
+					<img src="images/icons/terminal.png">
+					Terminal <span>(bash)</span>
+				</li>
+				<li>
+					<img src="images/icons/sequelpro.png">
+					Sequel Pro <span>(MySQL client)</span>
+				</li>
+				<li>
+					<img src="images/icons/macvim.png">
+					MacVim <span>(Text editor)</span>
+				</li>
+				<li>
+					<img src="images/icons/alfred2.png">
+					Alfred 2 <span>(App Launcher)</span>
+				</li>
+				<li>
+					<img src="images/icons/safari.png">
+					Safari <span>(Browser)</span>
+				</li>
+				<li>
+					<img src="images/icons/soulver.png">
+					Soulver <span>(The Calculator)</span>
+				</li>
+			</ul>
 
 		</div>
 		<div class="step" data-x="0" data-y="7000">

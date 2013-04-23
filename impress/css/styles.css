@@ -1,0 +1,325 @@
+/* --- Basic reset --- --- --- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\000032}}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\000033}}
+html {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\000034}}
+b, strong {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\000035}}
+i, em {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\000036}}
+a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\000037}}
+body {
+  pointer-events: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\000038}}
+#impress {
+  pointer-events: auto;
+}
+
+/* --- Imports --- --- --- */
+/* --- Typography --- --- --- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\000033}}
+table, td, th, form, input, textarea, select, option,
+body {
+  font: 26px/1.3em "PT Sans", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\000035}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", serif;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\000037}}
+code, pre {
+  font-family: Andale Mono, monospace;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\000039}}
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000310}}
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000311}}
+h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000312}}
+h4 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000313}}
+h5 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000314}}
+h6 {
+  font-size: 1.0em;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000316}}
+hgroup h6 {
+  padding-bottom: 0;
+  margin-bottom: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000318}}
+p, ul, ol {
+  padding-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000320}}
+blockquote {
+  position: relative;
+  padding: 1em 2.5em;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000321}}
+blockquote:before {
+  content: '‟';
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  font-size: 5em;
+  line-height: 1em;
+  color: #CCC;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000323}}
+ul, ol {
+  padding-left: 1.5em;
+  padding-right: 4em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000325}}
+li {
+  list-style-position: outside;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000327}}
+ul ol, ol ul, ul ul, ol ol {
+  padding-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000329}}
+ul li, ol ul > li {
+  list-style-type: disc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000330}}
+ul li ul li {
+  list-style-type: circle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000331}}
+ul li ul li ul li {
+  list-style-type: square;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000333}}
+ol li, ul ol > li {
+  list-style-type: decimal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000334}}
+ol li ol li {
+  list-style-type: upper-roman;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000335}}
+ol li ol li ol li {
+  list-style-type: upper-alpha;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000337}}
+dt {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000338}}
+dt sup {
+  color: #C00;
+  font-size: 0.7em;
+  padding-left: 0.3em;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000339}}
+dd {
+  padding: 0 4em 0.8em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000341}}
+table {
+  width: 100%;
+  margin-bottom: 1.5em;
+  table-layout: fixed;
+  border: 1px solid #CCC;
+  border-spacing: 0px;
+  border-bottom-color: #FFF;
+  border-right-color: #FFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000342}}
+table .name {
+  width: 40%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000343}}
+table .date {
+  width: 20%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000344}}
+table tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000345}}
+table th, table td {
+  padding: 0.2em 0.4em;
+  border: 1px solid #CCC;
+  border-top-color: #FFF;
+  border-left-color: #FFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/_typography\.scss}line{font-family:\0000346}}
+table th {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* --- General styles --- --- --- */
+/* --- Step styles --- --- --- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000319}}
+.step {
+  width: 900px;
+  min-height: 800px;
+  /*background: #EEE; */
+  padding: 2em 2.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000327}}
+.step.center {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000331}}
+.step h1:first-child:last-child, .step h2:first-child:last-child, .step h3:first-child:last-child {
+  text-align: center;
+  margin-top: 300px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000336}}
+.step h1 span, .step h2 span, .step h3 span {
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  color: #666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000344}}
+.step img.banner {
+  display: block;
+  width: 100%;
+  padding: 0.2em;
+  background: #FFF;
+  border: 2px solid #CCC;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000353}}
+.step pre code {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  -webkit-box-shadow: #cccccc 0 0 0.25em;
+  -moz-box-shadow: #cccccc 0 0 0.25em;
+  box-shadow: #cccccc 0 0 0.25em;
+}
+
+/* --- All slides are invisible until active --- --- --- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000360}}
+.impress-enabled .step {
+  margin: 0;
+  opacity: 0.3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000361}}
+.step:not(.active) {
+  opacity: 0.0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000362}}
+.impress-enabled .step.active {
+  opacity: 1;
+}
+
+/* --- Impress not supported styles --- --- --- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000365}}
+.fallback-message {
+  font-family: sans-serif;
+  line-height: 1.3;
+  display: none;
+  width: 700px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 1px solid #E4C652;
+  background: #EEDC94;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000369}}
+.fallback-message p {
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000374}}
+.impress-not-supported .step {
+  position: relative;
+  opacity: 1;
+  margin: 20px auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/koko\/Sites\/rhyndo\/talks\/impress\/scss\/styles\.scss}line{font-family:\0000376}}
+.impress-not-supported .fallback-message {
+  display: block;
+}

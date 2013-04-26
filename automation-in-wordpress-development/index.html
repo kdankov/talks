@@ -17,6 +17,14 @@
 
 	<!-- Impress.js Theme -->
 	<link href="/impress/css/styles.css" rel="stylesheet" />
+	<style>
+		body { font-size: 1.9em; }
+		pre code {
+			overflow: hidden;
+			color: #000; 
+			text-shadow: 3px 3px 3px #FFF;
+		}
+	</style>
 </head>
 <body>
 
@@ -25,7 +33,7 @@
 		<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 	</div>
 
-	<div id="impress">
+	<div id="impress" data-width="1000" data-transition-duration="1">
 
 		<div class="step"  data-x="3000" data-y="3000" data-z="-1" data-scale="6" id="title">
 
@@ -100,7 +108,7 @@
 			<p>Колко от вас:</p>
 			<ul>
 				<li>
-					Менажират WordPress инсталации
+					Управляват WordPress инсталации
 					<ul>
 						<li>Update Core</li>
 						<li>Database backups</li>
@@ -234,7 +242,7 @@
 				<li>Инсталиране WordPress</li>
 				<li>Копиране, конфигурация и активиране на нова тема</li>
 				<li>Отваряне на файловете от темата в текстов редактор</li>
-				<li>Други ... (SASS &amp; Compass)</li>
+				<li>Други ... (Sass &amp; Compass)</li>
 			</ol>
 			<p>Вече мога да започна работа.</p>
 		</div>
@@ -264,7 +272,7 @@
 			<ul>
 				<li>Terminal (bash)</li>
 				<li>Browser (download WP)</li>
-				<li>Finder / Windows explorer / File manager</li>
+				<li>Finder / Windows Explorer / File manager</li>
 			</ul>
 
 		</div>
@@ -325,11 +333,11 @@
 
 			<hgroup>
 				<h6>Разработка на теми &raquo; Създаване на нов сайт</h6>
-				<h2>wp-install</h2>
+				<h2>lazywp-install</h2>
 			</hgroup>
 
 			<pre>
-<code class="bash">$ wp-install portfolio
+<code class="bash">$ lazywp-install portfolio
 
 Virtual Host &amp; Server configuration ...
 
@@ -348,7 +356,7 @@ Virtual Host &amp; Server configuration - Finished!
 
 			<hgroup>
 				<h6>Разработка на теми &raquo; Създаване на нов сайт</h6>
-				<h2>wp-install</h2>
+				<h2>lazywp-install</h2>
 			</hgroup>
 
 			<pre>
@@ -358,7 +366,7 @@ Installing WordPress ...
 
 --- MySQL server check passed: running
 --- getting the latest WordPress and extracting files.
---- wp-content folder moved outside wordpress folder.
+--- wp-content folder moved outside WordPress folder.
 --- wp-config created.
 --- index.php file created.
 --- database &amp; user created.
@@ -374,7 +382,7 @@ WordPress installation &amp; configuration - Finished!
 
 			<hgroup>
 				<h6>Разработка на теми &raquo; Създаване на нов сайт</h6>
-				<h2>wp-install</h2>
+				<h2>lazywp-install</h2>
 			</hgroup>
 
 			<h3>Спазване на добри практики</h3>
@@ -500,7 +508,7 @@ git pull
 # Remove compiled CSS files
 rm css/*.css
 
-# Recompile CSS from SASS files
+# Recompile CSS from Sass files
 compass compile --output-style compressed --force
 
 # Any other build operations you might need
@@ -531,7 +539,7 @@ compass compile --output-style compressed --force
 			<ul>
 				<li>Open Terminal tab with the project directory and run <code>git status</code></li>
 				<li>Open another Terminal tab and initialize <code>compass watch</code></li>
-				<li>Open the main SASS file in text editor of choice.(MacVim)</li>
+				<li>Open the main Sass file in text editor of choice.(MacVim)</li>
 				<li>Open the project in all modern browsers. (Safari, Chrome, Firefox)</li>
 			</ul>
 

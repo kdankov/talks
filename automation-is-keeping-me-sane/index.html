@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Автоматизация при разработка и поддръжка на WordPress сайтове</title>
+		<meta name="description" content="Автоматизация при разработка и поддръжка на WordPress сайтове">
+		<meta name="author" content="Константин Данков">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="../reveal/css/theme/lazy.css" id="theme">
+
+		<link rel="stylesheet" href="../reveal/lib/css/solarized_light.css"><!-- For syntax highlighting -->
+
+		<script>document.write( '<link rel="stylesheet" href="../reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script><!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<!--[if lt IE 9]><script src="../reveal/lib/js/html5shiv.js"></script><![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides"><!-- Any section element inside of this container is displayed as a slide -->
+
+				<section>
+					<h1>Automation <span>is keeping me sane <br/>and <em>lazy</em></span></h1>
+				</section>
+
+				<section>
+					<h2>За Лектора ...</h2>
+
+					<h3>Коко <span>a.k.a Мързеливеца</span></h3>
+					<ul>
+						<li>Project Manager (Ръководител проекти)</li>
+						<!--
+						Нещо като класен ръководител на програмистите. Уж съм много строг и всички имат респект от мен, но никой не ме слуша какво говоря.
+						-->
+						<li>Front End dev, Дизайнер</li>
+						<li>Професионално мрънкало</li>
+					</ul>
+					<ul>
+						<li>В УС на init Lab, Hackerspace в София</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ежедневие ...</h2>
+
+					<ul>
+						<li>Редактирам документация</li>
+						<li>Мъдря задачки за програмистите.</li>
+						<li>Говоря много! <em>(с колегите)</em></li>
+						<li>Менажирам разраборване на няколко iOS <strong>неща</strong></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ежедневие ...</h2>
+
+					<ul>
+						<li>Сравнително много и различни проекти</li>
+						<li>Различен начин и естество на работа</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ежедневие -> Лудница!</h2>
+				</section>
+
+				<section>
+					<h2>Автоматизация <span>(personal) Workspace automation</span></h2>
+				</section>
+
+				<section>
+					<h3>Obligatory audience questions?</h3>
+				</section>
+
+				<section>
+					<h3>The point?!</h3>
+				</section>
+
+				<section>
+					<h3><strong>Внимание:</strong> Луд Макаджия!</h3>
+					<p><img width="80%" src="images/alergic-to-nonmacs.jpg" class="banner"></p>
+				</section>
+
+				<section>
+					<h2>Щастливо мързелуване</h2>
+
+					<ul>
+						<li>Увеличена производителност</li>
+						<li>Предвидимо ниво на качеството</li>
+						<li>Стриктно следване на установените процеси</li>
+						<li>...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Радо, няма безплатен обяд!</h3>
+				</section>
+
+				<section>
+					<h2>Отговорност и проблеми</h2>
+
+					<ul>
+						<li>Време за поддръжка на автоматизацията</li>
+						<li>Голяма начална инвестиция</li>
+						<li>Непредвидими разходи за разработка</li>
+						<li>Проблеми със сигурността</li>
+						<li>...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Automation</h2>
+				</section>
+
+				<section>
+					<h2>App launchers</h2>
+				</section>
+
+				<section>
+					<h2>App launcher</h2>
+
+					<ul>
+						<li>Quicksilver</li>
+						<li>Spotlight</li>
+						<li>Alfred</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Window Management</h2>
+				</section>
+
+				<section>
+					<h2>Window Management</h2>
+					<p><img src="images/setup.png" class="banner" /></p>
+					<p>Проблем?</p>
+				</section>
+
+				<section>
+					<h2>Window Management</h2>
+					<ul>
+						<li>Save windows states with different profiles</li>
+						<li>Move windows to next/previous screen</li>
+						<li>Move windows to exact screen</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Photoshop</h2>
+				</section>
+
+				<section>
+					<h2>Photoshop</h2>
+					<ul>
+						<li>Smart objects</li>
+						<li>Layer compositions</li>
+						<li>Scratch files</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Configuration & Setup</h2>
+				</section>
+
+				<section>
+					<h2>Когато дизайнер чуе Shell/Terminal</h2>
+				</section>
+
+				<section>
+					<h4>Когато дизайнер чуе Shell/Terminal</h4>
+					<video data-autoplay src="videos/movie.mp4"></video>
+				</section>
+
+				<section>
+					<h3>dotfiles on GitHub</h2>
+					<ul>
+						<li>Shell config</li>
+						<li>Git config</li>
+						<li>Vim config *</li>
+						<li>Software installation & configuration scripts</li>
+					</ul>
+					<p>Work in progress ...</p>
+				</section>
+
+				<section>
+					<h2>lazywp-install</h2>
+				</section>
+
+				<section>
+					<h2>lazywp-install</h2>
+					<pre><code class="bash">$ lazywp-install portfolio
+
+Virtual Host &amp; Server configuration ...
+
+--- hosts file updated.
+--- vhost file created.
+--- Apache restarted.
+
+Virtual Host &amp; Server configuration - Finished! 
+
+...
+</code></pre>
+				</section>
+
+				<section>
+					<h2>lazywp-install</h2>
+					<pre><code class="bash">...
+
+Installing WordPress ...
+
+--- MySQL server check passed: running
+--- getting the latest WordPress and extracting files.
+--- wp-content folder moved outside WordPress folder.
+--- wp-config created.
+--- index.php file created.
+--- database &amp; user created.
+--- WordPress database install &amp; admin user created.
+--- default development theme created and activated. 
+
+WordPress installation &amp; configuration - Finished! 
+</code></pre>
+				</section>
+
+				<section>
+					<h2>lazywp-install</h2>
+					<h3>Спазване на добри практики</h3>
+					<p>Пример: Разделяне на нашите файлове и системните файлове на WordPress, които подлежат на промяна</p>
+				</section>
+
+				<section>
+					<h1>Idea time!<br> Chaining</h1>
+				</section>
+
+				<section>
+					<h2>Easy project switching</h2>
+				</section>
+
+				<section>
+					<h2>Easy project switching</h2>
+					<!--<h4>Consular & Bash aliases</h4>-->
+					<pre><code class="bash">$ edit [project-name]</code></pre>
+					<ul>
+						<li><code>compass watch</code></li>
+						<li><code>git status</code></li>
+						<li>Open source in Editor of choice (MacVim)</li>
+						<li>Open Safari, Chrome, Firefox</li>
+					</ul>
+					<!--<ul>-->
+						<!--<li>Open Terminal tab with the project directory and run <code>git status</code></li>-->
+						<!--<li>Open another Terminal tab and initialize <code>compass watch</code></li>-->
+						<!--<li>Open the main Sass file in text editor of choice.(MacVim)</li>-->
+						<!--<li>Open the project in all modern browsers. (Safari, Chrome, Firefox)</li>-->
+					<!--</ul>-->
+				</section>
+
+				<section>
+					<h2>Update All<span>WordPress/Drupal projects</span></h2>
+				</section>
+
+				<section>
+					<h2>Update All<span>WordPress/Drupal projects</span></h2>
+					<pre><code class="bash">$ lazyupdate-wp</code></pre>
+				</section>
+
+				<section>
+					<h2>Deployment</h2>
+				</section>
+
+				<section>
+					<h2>Deployment</h2>
+					<h4>Качване на промени в GitHub</h4>
+					<pre>
+<code class="bash">$ git commit -m "[commit message]"
+...
+$ git push
+...
+</code>
+			</pre>
+				</section>
+
+				<section>
+					<h2>Deployment</h2>
+					<h4>Настройки в GitHub</h4>
+					<img src="images/github-config.png" class="banner">
+				</section>
+
+				<section>
+					<h2>Deployment</h2>
+					<h4>deploy.php</h4>
+<pre><code class="php">&lt;?php
+
+	// Are we getting the 'payload' json data via POST request?
+	// If not it will terminate the script.
+	try
+	{
+		$payload = json_decode($_POST['payload']);
+	}
+	catch(Exception $e)
+	{
+		if($debug) { echo 'No payload data'; }
+		exit(0);
+	}
+
+...
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Deployment</h2>
+					<h4>deploy.php</h4>
+<pre><code class="php">...
+
+	// Save the current directory state 
+	// change to the needed folder
+	$dir = getcwd();
+	chdir('[folder needed]');
+
+	// Check if there were any commits in the master branch
+	if ($payload->ref == 'refs/heads/master'){
+		exec('./deploy.sh 2>&1', $output);
+	}
+
+	// Get back to the original dir
+	chdir($dir);
+
+?&gt;
+</code>
+</pre>
+				</section>
+
+				<section>
+					<h2>Deployment</h2>
+					<h4>deploy.sh</h4>
+<pre><code class="bash"># go to the Git repository root
+cd [some-folder]
+
+# Get the latest changes from GitHub
+git pull
+
+# Remove compiled CSS files
+rm css/*.css
+
+# Recompile CSS from Sass files
+compass compile --output-style compressed --force
+
+# Any other build operations you might need
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Deployment</h2>
+					<p>В момента в който push'нете промени в master branch'а сайта ще се обнови автоматично.</p>
+				</section>
+
+				<section>
+					<h2>Eдин светъл ден ...</h2>
+					<p>1 команда за създаване на нов VM, който е конфигуриран за средата, проекта и програмиста.</p>
+				</section>
+
+				<section>
+					<h2>Заключение</h2>
+				</section>
+
+				<section>
+					<h2>Ресурси</h2>
+					<ul>
+						<li>
+							Bash scripts<br>
+							<a href="http://github.com/kdankov/bash-scripts">http://github.com/kdankov/bash-scripts</a>
+						</li>
+						<li>
+							wp-cli<br>
+							<a href="http://wp-cli.org/">http://wp-cli.org/</a>
+						</li>
+						<li>
+							Alfred 2<br>
+							<a href="http://www.alfredapp.com/">http://www.alfredapp.com/</a>
+						</li>
+						<li>
+							Vim Config<sup>advanced</sup><br>
+							<a href="http://github.com/kdankov/vim">http://github.com/kdankov/vim</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Благодаря за вниманието!</h2>
+				</section>
+
+				<section>
+					<h2>Въпроси?</h2>
+				</section>
+
+			</div>
+		</div>
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.min.js"></script>
+		<script>
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: false,
+			progress: false,
+			history: true,
+			keyboard: true,
+			overview: true,
+			center: true,
+			loop: false,
+			autoSlide: 0,
+			mouseWheel: false,
+			rollingLinks: true,
+			transitionSpeed: 'default', // default/fast/slow
+			transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-960497-12', 'thelazyperson.org');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

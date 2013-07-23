@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024" />
+	<title>Автоматизация при разработка и поддръжка на WordPress сайтове</title>
+
+	<link rel="shortcut icon" href="favicon.png" />
+
+	<!-- Code Prettifier: -->
+	<link href="/impress/css/highlight/solarized_light.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="/impress/js/highlight.pack.js"></script>
+	<script>
+		hljs.tabReplace = '    ';
+		hljs.initHighlightingOnLoad();
+	</script>
+	<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+	<script>
+
+		var videoFound = true;
+		$(function(){
+			
+			function handleCurrentSlide() {
+
+				var videoSlide = $('#beedo');
+
+				if ( videoSlide.hasClass('active') && videoFound ) {
+					console.log('found');
+
+					var video = document.getElementById("movie1");
+					video.play();
+
+					videoFound = false;
+				}
+			}
+
+			setInterval(handleCurrentSlide, 100);
+
+		});
+
+	</script>
+	
+
+	<!-- Impress.js Theme -->
+	<link href="/impress/css/styles.css" rel="stylesheet" />
+	<style>
+		body { font-size: 1.9em; }
+		pre code {
+			overflow: hidden;
+			color: #000; 
+			text-shadow: 3px 3px 3px #FFF;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="fallback-message">
+		<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+		<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+
+	<div id="impress" data-width="1000" data-transition-duration="1">
+
+		<div class="step"  data-x="-1000" data-y="-1000" id="title">
+
+			<h1>Automation <span>is keeping me sane <br/>and <em>lazy</em><span></h1>
+
+		</div>
+		<div class="step"  data-x="0" data-y="1000" id="about">
+			
+			<!--<img src="images/scarecrow.jpg" style="display: block; float: right;">-->
+			<h2>За Лектора ...</h2>
+
+			<h3>Коко <span>a.k.a Мързеливеца</span></h3>
+
+			<ul>
+				<li>Project Manager (Ръководител проекти)</li>
+				<!--
+					Нещо като класен ръководител на програмистите. Уж съм много строг и всички имат респект от мен, но никой не ме слуша какво говоря.
+				-->
+				<li>Front End dev, Дизайнер</li>
+				<li>Професионално мрънкало</li>
+			</ul>
+			<ul>
+				<li>В УС на init Lab, Hackerspace в София</li>
+			</ul>
+
+		</div>
+		<div class="step"  data-x="1000" data-y="1000">
+
+			<h2>Ежедневие ...</h2>
+
+			<ul>
+				<li>Редактирам документация</li>
+				<li>Мъдря задачки за програмистите.</li>
+				<li>Говоря много! <em>(с колегите)</em></li>
+				<li>Менажирам разраборване на няколко iOS <strong>неща</strong></li>
+			</ul>
+
+		</div>
+		<div class="step"  data-x="1000" data-y="1000">
+
+			<h2>Ежедневие ...</h2>
+
+			<ul>
+				<li>Сравнително много и различни проекти</li>
+				<li>Различен начин и естество на работа</li>
+			</ul>
+
+		</div>
+		<div class="step" data-x="2000" data-y="1000">
+
+			<h2>Ежедневие -> Лудница!</h2>
+
+		</div>
+		<div class="step"  data-x="0" data-y="3000">
+
+			<h2>Автоматизация <span>(personal) Workspace automation</span></h2>
+
+		</div>
+		<div class="step"  data-x="1000" data-y="2000">
+			<h3>Obligatory audience questions?</h3>
+		</div>
+		<div class="step"  data-x="1000" data-y="2000">
+			<h3>The point?!</h3>
+		</div>
+		<div class="step" data-x="3000" data-y="1000">
+
+			<h3><strong>Внимание:</strong> Луд Макаджия!</h3>
+			<p><img src="images/alergic-to-nonmacs.jpg" class="banner"></p>
+
+		</div>
+		<div class="step"  data-x="1000" data-y="3000">
+
+			<h2>Щастливо мързелуване</h2>
+
+			<ul>
+				<li>Увеличена производителност</li>
+				<li>Предвидимо ниво на качеството</li>
+				<li>Стриктно следване на установените процеси</li>
+				<li>...</li>
+			</ul>
+
+		</div>	
+		<div class="step" data-x="3000" data-y="3000">
+
+			<h3>Радо, няма безплатен обяд!</h3>
+
+		</div>
+		<div class="step"  data-x="1000" data-y="3000">
+
+			<h2>Отговорност и проблеми</h2>
+
+			<ul>
+				<li>Време за поддръжка на автоматизацията</li>
+				<li>Голяма начална инвестиция</li>
+				<li>Непредвидими разходи за разработка</li>
+				<li>Проблеми със сигурността</li>
+				<li>...</li>
+			</ul>
+
+		</div>
+		<div class="step" data-x="0" data-y="6000">
+
+			<h2>Automation</h2>
+
+		</div>
+		<div class="step" data-x="0" data-y="6000">
+
+			<h2>App launchers</h2>
+
+		</div>
+		<div class="step" data-x="0" data-y="6000">
+			
+			<h2>App launcher</h2>
+
+			<ul>
+				<li>Quicksilver</li>
+				<li>Spotlight</li>
+				<li>Alfred</li>
+			</ul>
+
+		</div>
+		<div class="step" data-x="0" data-y="6000">
+			
+			<h2>Window Management</h2>
+
+		</div>
+		<div class="step" data-x="0" data-y="6000">
+
+			<h2>Window Management</h2>
+			<p><img src="images/setup.png" class="banner" /></p>
+			<p>Проблем?</p>
+
+		</div>
+		<div class="step" data-x="0" data-y="6000">
+
+			<h2>Window Management</h2>
+			<ul>
+				<li>Save windows states with different profiles</li>
+				<li>Move windows to next/previous screen</li>
+				<li>Move windows to exact screen</li>
+			</ul>
+
+		</div>
+		<div class="step" data-x="0" data-y="6000">
+			
+			<h2>Photoshop</h2>
+
+		</div>
+		<div class="step" data-x="0" data-y="6000">
+			
+			<h2>Photoshop</h2>
+			
+			<ul>
+				<li>Smart objects</li>
+				<li>Layer compositions</li>
+				<li>Scratch files</li>
+			</ul>
+
+
+		</div>
+		<div class="step" data-x="7000" data-y="4000">
+
+			<h2>Configuration & Setup</h2>
+
+		</div>
+		<div class="step" data-x="7000" data-y="4000">
+
+			<h2>Когато дизайнер чуе Shell/Terminal</h2>
+
+		</div>
+		<div class="step" data-x="7000" data-y="4000" id="beedo">
+
+			<h4>Когато дизайнер чуе Shell/Terminal</h4>
+			<video width="100%" src="videos/movie.mp4" id="movie1" autoplay="autoplay"></video>
+
+		</div>
+		<div class="step" data-x="7000" data-y="4000">
+			<h3>dotfiles on GitHub</h2>
+
+			<ul>
+				<li>Shell config</li>
+				<li>Git config</li>
+				<li>Vim config *</li>
+				<li>Software installation & configuration scripts</li>
+			</ul>
+
+			<p>Work in progress ...</p>
+
+		</div>
+		<div class="step" data-x="7000" data-y="4000">
+			<h2>lazywp-install</h2>
+		</div>
+		<div class="step" data-x="7000" data-y="4000">
+
+			<h2>lazywp-install</h2>
+
+			<pre>
+<code class="bash">$ lazywp-install portfolio
+
+Virtual Host &amp; Server configuration ...
+
+--- hosts file updated.
+--- vhost file created.
+--- Apache restarted.
+
+Virtual Host &amp; Server configuration - Finished! 
+
+...
+</code>
+			</pre>
+
+		</div>
+		<div class="step" data-x="8000" data-y="4000">
+
+			<h2>lazywp-install</h2>
+
+			<pre>
+<code class="bash">...
+
+Installing WordPress ...
+
+--- MySQL server check passed: running
+--- getting the latest WordPress and extracting files.
+--- wp-content folder moved outside WordPress folder.
+--- wp-config created.
+--- index.php file created.
+--- database &amp; user created.
+--- WordPress database install &amp; admin user created.
+--- default development theme created and activated. 
+
+WordPress installation &amp; configuration - Finished! 
+</code>
+			</pre>
+
+		</div>
+		<div class="step" data-x="9000" data-y="4000">
+
+			<h2>lazywp-install</h2>
+
+			<h3>Спазване на добри практики</h3>
+			<p>Пример: Разделяне на нашите файлове и системните файлове на WordPress, които подлежат на промяна</p>
+
+		</div>
+		<div class="step" data-x="8000" data-y="5000">
+			<h1><span>Idea time!</span> Chaining</h1>
+		</div>
+		<div class="step" data-x="8000" data-y="5000">
+			<h2>Easy project switching</h2>
+		</div>
+		<div class="step" data-x="8000" data-y="5000">
+
+			<h2>Easy project switching</h2>
+
+			<!--<h4>Consular & Bash aliases</h4>-->
+			<pre><code class="bash">$ edit [project-name]</code></pre>
+			<ul>
+				<li><code>compass watch</code></li>
+				<li><code>git status</code></li>
+				<li>Open source in Editor of choice (MacVim)</li>
+				<li>Open Safari, Chrome, Firefox</li>
+			</ul>
+			
+			<!--<ul>-->
+				<!--<li>Open Terminal tab with the project directory and run <code>git status</code></li>-->
+				<!--<li>Open another Terminal tab and initialize <code>compass watch</code></li>-->
+				<!--<li>Open the main Sass file in text editor of choice.(MacVim)</li>-->
+				<!--<li>Open the project in all modern browsers. (Safari, Chrome, Firefox)</li>-->
+			<!--</ul>-->
+
+		</div>
+		<div class="step" data-x="2000" data-y="5000">
+			<h2>Update All<span>WordPress/Drupal projects</span></h2>
+		</div>
+		<div class="step" data-x="2000" data-y="5000">
+			<h2>Update All<span>WordPress/Drupal projects</span></h2>
+			<pre><code class="bash">$ lazyupdate-wp</code></pre>
+			<br />
+			<pre><code class="bash">cd [wp folder 1]
+wp core update
+... 
+</code></pre>
+
+			
+		</div>
+		<div class="step" data-x="2000" data-y="5000">
+			<h2>Deployment</h2>
+		</div>
+		<div class="step" data-x="2000" data-y="5000">
+			
+			<h2>Deployment</h2>
+
+			<h4>Качване на промени в GitHub</h4>
+			<pre>
+<code class="bash">$ git commit -m "[commit message]"
+...
+$ git push
+...
+</code>
+			</pre>
+		</div>
+		<div class="step" data-x="3000" data-y="5000">
+			
+			<h2>Deployment</h2>
+
+			<h4>Настройки в GitHub</h4>
+			<img src="images/github-config.png" class="banner">
+
+		</div>
+		<div class="step" data-x="4000" data-y="5000">
+
+			<h2>Deployment</h2>
+
+			<h4>deploy.php</h4>
+<pre><code class="php">&lt;?php
+
+	// Are we getting the 'payload' json data via POST request?
+	// If not it will terminate the script.
+	try
+	{
+		$payload = json_decode($_POST['payload']);
+	}
+	catch(Exception $e)
+	{
+		if($debug) { echo 'No payload data'; }
+		exit(0);
+	}
+
+...
+</code>
+</pre>
+		</div>	
+		<div class="step" data-x="5000" data-y="5000">
+
+			<h2>Deployment</h2>
+
+			<h4>deploy.php</h4>
+<pre><code class="php">...
+
+	// Save the current directory state 
+	// change to the needed folder
+	$dir = getcwd();
+	chdir('[folder needed]');
+
+	// Check if there were any commits in the master branch
+	if ($payload->ref == 'refs/heads/master'){
+		exec('./deploy.sh 2>&1', $output);
+	}
+
+	// Get back to the original dir
+	chdir($dir);
+
+?&gt;
+</code>
+</pre>
+		</div>
+		<div class="step" data-x="6000" data-y="5000">
+
+			<h2>Deployment</h2>
+
+			<h4>deploy.sh</h4>
+<pre><code class="bash"># go to the Git repository root
+cd [some-folder]
+
+# Get the latest changes from GitHub
+git pull
+
+# Remove compiled CSS files
+rm css/*.css
+
+# Recompile CSS from Sass files
+compass compile --output-style compressed --force
+
+# Any other build operations you might need
+</code>
+</pre>
+		</div>
+		<div class="step" data-x="7000" data-y="5000">
+
+			<h2>Deployment</h2>
+			<p>В момента в който push'нете промени в master branch'а сайта ще се обнови автоматично.</p>
+
+		</div>
+		<div class="step" data-x="7000" data-y="5000">
+
+			<h2>Eдин светъл ден ...</h2>
+
+			<p>1 команда за създаване на нов VM, който е конфигуриран за средата, проекта и програмиста.</p>
+
+		</div>
+		<div class="step" data-x="7000" data-y="5000">
+
+			<h2>Заключение</h2>
+
+		</div>
+		<div class="step" data-x="1000" data-y="6000">
+			
+			<h2>Ресурси</h2>
+
+			<dl>
+				<dt>Bash scripts</dt>
+				<dd>http://github.com/kdankov/bash-scripts</dd>
+				<dt>wp-cli</dt>
+				<dd>http://wp-cli.org/</dd>
+				<dt>Alfred 2</dt>
+				<dd>http://www.alfredapp.com/</dd>
+				<dt>Vim Config<sup>advanced</sup></dt>
+				<dd>http://github.com/kdankov/vim</dd>
+			</dl>
+
+		</div>
+		<div class="step" data-x="0" data-y="7000">
+
+			<h2>Благодаря за вниманието!</h2>
+
+		</div>
+		<div class="step" data-x="1000" data-y="7000">
+
+			<h2>Въпроси?</h2>
+
+		</div>
+		<div class="step" data-x="2000" data-y="7000" style="text-align: center;">
+			
+			<h2>Контакти</h2>
+			
+			<dl>
+				<dt>Визитка</dt>
+				<dd style="padding-right: 0;">http://dankov.name</dd>
+				<dt>Блог на Български</dt>
+				<dd style="padding-right: 0;">http://thelazyperson.org</dd>
+				<dt>Twitter на Български</dt>
+				<dd style="padding-right: 0;">@thelazyperson</dd>
+				<dt>Блог на Английски</dt>
+				<dd style="padding-right: 0;">http://tanstaafl.dankov.name</dd>
+				<dt>Twitter на Английски</dt>
+				<dd style="padding-right: 0;">@kdankov</dd>
+				<dt>init Lab</dt>
+				<dd style="padding-right: 0;">http://initlab.org</dd>
+			</dl>
+
+		</div>
+
+	</div>
+
+	<script src="/impress/js/impress.js"></script>
+	<script>impress().init();</script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-960497-12', 'thelazyperson.org');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

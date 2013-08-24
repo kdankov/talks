@@ -1,92 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
+---
+layout: default
+title: Your New Jekyll Site
+---
 
-	<title>Презентациите на Мързеливеца</title>
-	<meta name="description" content="Автоматизация при разработка и поддръжка на WordPress сайтове">
-	<meta name="author" content="Константин Данков">
-
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<link rel="stylesheet" href="../reveal/css/reveal.min.css">
-	<link rel="stylesheet" href="../reveal/css/theme/lazy.css" id="theme">
-
-	<link rel="stylesheet" href="../reveal/lib/css/zenburn.css"><!-- For syntax highlighting -->
-
-	<script>document.write( '<link rel="stylesheet" href="../reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script><!-- If the query includes 'print-pdf', use the PDF print sheet -->
-	<!--[if lt IE 9]><script src="../reveal/lib/js/html5shiv.js"></script><![endif]-->
-</head>
-<body>
-	<div class="reveal">
-		<div class="slides"><!-- Any div element inside of this container is displayed as a slide -->
-				
-			<section>
-				<h1>Презентациите на Мързеливеца</h1>
-				<ul>
-					<li>
-						<h5><a href="/automation-is-keeping-me-sane" target="_blank">Automation is keeping me sane (and lazy)</a></h5>
-						<p>Презентирано в рамките на VarnaConf, Юли 2013</p>
-					</li>
-					<li>
-						<h5><a href="/automation-in-wordpress-development" target="_blank">Автоматизация при разработка и поддръжка на WordPress</a></h5>
-						<p>Презентирано в рамките на <a href="http://www.wordup.bg" target="_blank">WordUp</a>, 27 Април 2013</p>
-					</li>
-					<li>
-						<h5><a href="/use-source-control" target="_blank">Source Control за спокоен сън</a></h5>
-						<p>Презентирано в рамките на <a href="http://conf.burgaslab.org" target="_blank">BurgasConf</a>, 20 Април 2013</p>
-					</li>
-					<li>
-						<h5><a href="http://wordpress.tv/2010/10/02/konstantin-dankov-k2-framework/" target="_blank">Разработка на под-теми с K2 Theme Framework</a></h5>
-						<p>Презентирано в рамките на WordCamp Bulgaria, Август 2010</p>
-					</li>
-				</ul>
-				<footer>
-					<a href="http://thelazyperson.org">Обратно към Мързеливец и Co.</a>
-				</footer>
-			</section>
-
-		</div>
-	</div>
-	<script src="../reveal/lib/js/head.min.js"></script>
-	<script src="../reveal/js/reveal.min.js"></script>
-	<script>
-		// Full list of configuration options available here:
-		// https://github.com/hakimel/reveal.js#configuration
-		Reveal.initialize({
-			controls: false,
-			progress: false,
-			history: true,
-			keyboard: true,
-			overview: true,
-			center: true,
-			loop: false,
-			autoSlide: 0,
-			mouseWheel: false,
-			rollingLinks: true,
-			transitionSpeed: 'default', // default/fast/slow
-			transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-			dependencies: [
-				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-			]
-		});
-	</script>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-960497-12', 'thelazyperson.org');
-		ga('send', 'pageview');
-	</script>
-</body>
-</html>
+<div id="home">
+  <h1>Презентациите на Мързеливеца</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

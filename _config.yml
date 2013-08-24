@@ -1,0 +1,6 @@
+name: Презентациите на Мързеливеца
+markdown: redcarpet
+pygments: true
+
+permalink: /:categories/:title/
+

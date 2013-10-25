@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext,latin-ext);
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is created by Konstantin Dankov
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+.reveal .slides { text-align: left; }
+.reveal img, .reveal video, .reveal iframe { max-width: 100%; max-height: 70%; }
+
+.reveal h1 { font-size: 2.4em; }
+.reveal h2 { font-size: 2.2em; }
+.reveal h3 { font-size: 1.8em; }
+.reveal h4 { font-size: 1.4em; }
+.reveal h5 { font-size: 1.2em; }
+.reveal h6 { font-size: 1.0em; }
+
+.reveal pre code { padding: 10px; }
+.reveal pre, .reveal code { border-radius: 10px; width: auto; font-size: 0.9em; line-height: 1.4em; margin-bottom: 1em; }
+.reveal ol, .reveal ul { padding-bottom: 1em; padding-top: 0.4em; }
+.reveal ul li br + a:last-child { padding-bottom: 1em; }
+.reveal blockquote { width: auto; border: none; border-left: 0.5em solid #EEE; padding-left: 0.5em; }
+.reveal .codebigger code { font-size: 1.1em; line-height: 1.4em;   }
+.reveal .codesmaller code { font-size: 0.8em; line-height: 1.4em; }
+.reveal .codesmall code { font-size: 0.7em; line-height: 1.4em; }
+.reveal section .contact { font-size: 0.7em; border-top: 1px solid #CCC; margin-top: 2em; padding-top: 2em;   }
+
+.reveal section { height: 100%;  }
+.reveal .slides>section, .reveal .slides>section>section { padding: 0; overflow: hidden;  }
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body { background: #409e44; }
+
+.reveal {
+  font-family: "Open Sans Condensed", Helvetica, sans-serif;
+  font-size: 32px;
+  color: #FFF; }
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  line-height: 1em;
+  text-transform: none; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #336699;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #6699cc;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #204060; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img { margin: 15px 0px; }
+.reveal a:hover img { }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #336699; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #336699; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #336699; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #336699; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #6699cc; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #6699cc; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #6699cc; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #6699cc; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #336699;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.reveal td,
+.reveal li,
+.reveal p { text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.4); }
+.reveal .smaller { font-size: 0.8em;  }
+.reveal .bigger { font-size: 1.2em;  }
+
+h1 span.wordpress { display: block;  font-size: 1.9em; line-height: 1;  }
+section[data-state=title] h1 { position: absolute; left: 0; bottom: 0; text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6); }
+section[data-state=title] img { position: absolute; right: 0; top: 0; margin: 0; }
+
+.reveal section .title { position: absolute; left: 0; bottom: 0; width: 100%; }
+.reveal section h4,
+.reveal section h3,
+.reveal section h2,
+.reveal section h1 { text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6); }
+.reveal section h1 { font-size: 2em;  }
+
+.col { float: left; overflow: hidden; }
+.col.w2 { width: 50%; }
+.col.w3 { width: 33.3%; }
+.cleaner { clear: both; }
+
+.reveal .history { width: 90%; padding: 0 0 0 6px; margin: 0; }
+.reveal .history li { margin-bottom: 0.2em; list-style: none outside; border-left: 4px double #FFF; padding: 0.15em 0.4em;  }
+.reveal .history .date { display: block; font-size: 0.8em; line-height: 1;  }
+.reveal .history .version { display: block; }
+.reveal .history .theme { display: none; border-top: 1px solid #CCC; margin-top: 0.2em; padding-top: 0;   }
+.reveal .slides section .fragment.highlight-green.visible { color: #FFF; background: #409E44;  }
+.reveal .slides section .fragment.highlight-green.visible .theme { display: block; }

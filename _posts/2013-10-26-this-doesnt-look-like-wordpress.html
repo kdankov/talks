@@ -17,16 +17,16 @@ data-background-transition="slide"
 -->
 
 <section data-state="title">
-	<div class="title">
-		<h1>This doesn't look like <span class="wordpress">WordPress</span></h1>
+	<div class="bottomleft">
+		<h1>This doesn't look like <span class="huge">WordPress</span></h1>
 	</div>
-	<img src="/images/wc2013/wclogo.png">
+	<img src="/images/wc2013/wclogo.png" class="topright">
 	<aside class="notes" data-markdown></aside>
 </section>
 
 <section data-state="author">
-	<div class="title">
-		<h1><span class="smaller">by</span> <span class="wordpress">Konstantin Dankov</span></h1>
+	<div class="bottomleft">
+		<h1><span class="smaller">by</span> <span class="huge">Konstantin Dankov</span></h1>
 		<h3>Deals with the Front End side of things</h3>
 		<p>AKA: Crazy-ass CSS'er or simply: TheLazyPerson</p>
 
@@ -37,19 +37,78 @@ data-background-transition="slide"
 			</tr>
 		</table>
 	</div>
-	<aside class="notes" data-markdown></aside>
+	<aside class="notes" data-markdown>
+		In order to save time, or just avoid trying to pronounce my name, people call me Koko. Every time, no exceptions! 
+	</aside>
+</section>
+
+<section data-background="#5e7a5f">
+	<section data-transition="fade">
+		<div class="bottomright">
+			<h1>
+				<span class="verybig">
+					10 Tips	to make your<br>
+					WordPress blog look like a website
+				</span>
+			</h1>
+		</div>
+	</section>
+	<section data-transition="fade">
+		<div class="center">
+			<h1>
+				<span class="huge">
+					<strong>No!</strong>
+				</span>
+			</h1>
+		</div>
+		<aside class="notes" data-markdown>
+			I hope that this talk will be a touch better and more interesting than these type of articles.
+		</aside>
+	</section>
+	<section data-background="#508752">
+		<div class="center">
+			<ol>
+				<li class="huge">1. Any WordPress blog is already a website.</li>
+				<li class="huge fragment">2. <em>You</em> should strive for the look you want.</li>
+			</ol>
+		</div>
+	</section>
 </section>
 
 <section>
 	<section>
-		<h1>A little bit of history</h1>
+		<div class="center">
+			<h1><span class="verybig">So, what defines the look of WordPress?</span></h1> 
+		</div>
+	</section>
+	<section>
+		<div class="center">
+			<h1><span class="huge">Default themes</span></h1> 
+		</div>
+	</section>
+</section>
+
+<section data-background="#6c6c6c">
+	<section>
+		<div class="bottomleft">
+			<h1>
+				Default Themes
+				<span class="huge">A little bit of history</span>
+			</h1>
+		</div>
 		<aside class="notes" data-markdown></aside>
 	</section>
 
-	<section data-background="#368439" >
-		<h2>Major releases of WordPress</h2>
+	<section>
+
+		<div class="bottomright">
+			<h4>
+				Default Themes
+				<span class="huge">A little bit of history</span>
+			</h4>
+		</div>
 		
-		<div class="col w3">
+		<div class="col w4">
 			<ul class="history">
 				<li><span class="date">January 3, 2004</span>		<span class="version">1.0 Miles Davis</span></li>
 				<li><span class="date">May 22, 2004</span>			<span class="version">1.2 Charles Mingus</span></li>
@@ -60,29 +119,33 @@ data-background-transition="slide"
 				<li><span class="date">December 26, 2005</span>		<span class="version">2.0 Duke Ellington</span></li>
 				<li><span class="date">January 22, 2007</span>		<span class="version">2.1 Ella Fitzgerald</span></li>
 				<li><span class="date">May 16, 2007</span>			<span class="version">2.2 Stan Getz</span></li>
-				<li><span class="date">September 24, 2007</span>	<span class="version">2.3 Dexter Gordon</span></li>
 			</ul>
 		</div>
-		<div class="col w3">
+		<div class="col w4">
 			<ul class="history">
+				<li><span class="date">September 24, 2007</span>	<span class="version">2.3 Dexter Gordon</span></li>
 				<li><span class="date">March 29, 2008</span>		<span class="version">2.5 Michael Brecker</span></li>
 				<li><span class="date">July 15, 2008</span>			<span class="version">2.6 McCoy Tyner</span></li>
 				<li><span class="date">December 10, 2008</span>		<span class="version">2.7 John Coltrane</span></li>
 				<li><span class="date">June 10, 2009</span>			<span class="version">2.8 Chet Baker</span></li>
+			</ul>
+		</div>
+		<div class="col w4">
+			<ul class="history">
 				<li><span class="date">December 18, 2009</span>		<span class="version">2.9 Carmen McRae</span></li>
 				<li class="fragment highlight-green">
 					<span class="date">June 17, 2010</span>			<span class="version">3.0 Thelonious Monk</span>
 					<span class="theme">New Theme: Twenty Ten</span>
 				</li>
-			</ul>
-		</div>
-		<div class="col w3">
-			<ul class="history">
 				<li><span class="date">February 23, 2011</span>		<span class="version">3.1 Django Reinhardt</span></li>
 				<li class="fragment highlight-green">
 					<span class="date">July 4, 2011</span>			<span class="version">3.2 George Gershwin</span>
 					<span class="theme">New Theme: Twenty Eleven</span>
 				</li>
+			</ul>
+		</div>
+		<div class="col w4">
+			<ul class="history">
 				<li><span class="date">December 12, 2011</span>		<span class="version">3.3 Sonny Stitt</span></li>
 				<li><span class="date">June 13, 2012</span>			<span class="version">3.4 Grant Green</span></li>
 				<li class="fragment highlight-green">
@@ -99,33 +162,250 @@ data-background-transition="slide"
 	
 	</section>
 
-
-	<!--
-
-	Kubrik - Demo
-	http://kubrickdemo.wordpress.com
-
-	2010: A Theme Odyssey
-	http://wordpress.org/news/2009/12/2010-a-theme-odyssey/
-
-	Twenty Ten - Demo
-	http://twentytendemo.wordpress.com
-
-	Twenty Eleven - Demo
-	http://twentyelevendemo.wordpress.com
-
-	Twenty Twelve - Demo
-	http://twentytwelvedemo.wordpress.com
-
-	Twenty Fourteen - Demo
-	http://twentyfourteendemo.wordpress.com
-
-	-->
-
-	<section>
-		<h2>Kubrick</h2>
+	<section class="themedemo"
+		data-background="/images/wc2013/kubrick.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">Kubrick</span></h1>
+			<p class="verybig"><a href="http://kubrickdemo.wordpress.com">http://kubrickdemo.wordpress.com</a></p>
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">February 17, 2005</span><br><span class="version">1.5 Billy Strayhorn</span></h3>
+		</div>
 	</section>
 
+	<section>
+		<h2>The Secret History of Kubrick,<br> the Blog Theme That Changed the Internet</h2>
+		<p class="bigger">January 8 2010, by Tina Daunt</p>
+
+		<br>
+		<p class="bigger"><a href="http://www.huffingtonpost.com/tina-daunt/the-secret-history-of-kub_b_415050.html">http://www.huffingtonpost.com/tina-daunt/the-secret-history-of-kub_b_415050.html</a></p>
+	</section>
+
+	<section class="themedemo"
+		data-background="/images/wc2013/twentyten.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">Twenty Ten</span></h1>
+			<p class="verybig"><a href="http://twentytendemo.wordpress.com">http://twentytendemo.wordpress.com</a></p>
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">June 17, 2010</span><br><span class="version">3.0 Thelonious Monk</span></h3>
+		</div>
+	</section>
+
+	<section class="themedemo"
+		data-background="/images/wc2013/twentyeleven.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">Twenty Eleven</span></h1>
+			<p class="verybig"><a href="http://twentyelevendemo.wordpress.com">http://twentyelevendemo.wordpress.com</a></p>
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">July 4, 2011</span><br><span class="version">3.2 George Gershwin</span></h3>
+		</div>
+	</section>
+
+	<section class="themedemo"
+		data-background="/images/wc2013/twentytwelve.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">Twenty Twelve</span></h1>
+			<p class="verybig"><a href="http://twentytwelvedemo.wordpress.com">http://twentytwelvedemo.wordpress.com</a></p>
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">December 11, 2012</span><br><span class="version">3.5 Elvin Jones</span></h3>
+		</div>
+	</section>
+
+	<section class="themedemo"
+		data-background="/images/wc2013/twentythirteen.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">Twenty Thirteen</span></h1>
+			<p class="verybig"><a href="http://twentythirteendemo.wordpress.com">http://twentythirteendemo.wordpress.com</a></p>
+			
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">August 1, 2013</span><br><span class="version">3.6 Oscar Peterson</span></h3>
+		</div>
+	</section>
+
+	<section class="themedemo"
+		data-background="/images/wc2013/twentyfourteen.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">Twenty Fourteen</span></h1>
+			<p class="verybig"><a href="http://twentyfourteendemo.wordpress.com">http://twentyfourteendemo.wordpress.com</a></p>
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">December 2013</span><br><span class="version">3.8</span></h3>
+		</div>
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<div class="bottomleft">
+			<h1>
+				Control freak
+				<span class="huge">My own story ...</span>
+			</h1>
+		</div>
+		<aside class="notes" data-markdown></aside>
+	</section>
+	<section>
+		<div class="center" style="padding-top: 10%;">
+			<p class="huge">Years working on custom CMS systems</p>
+			<p class="huge fragment">+</p>
+			<p class="huge fragment">Being used to full control over the Front End</p>
+			<p class="huge fragment">=</p>
+			<p class="huge fragment">Different approach to WordPress themes.</p>
+		</div>
+	</section>
+	<section class="themedemo"
+		data-background="/images/wc2013/wawwd.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">We Are What We Do</span></h1>
+			<p class="verybig"><a href="http://wearewhatwedo.org">http://wearewhatwedo.org</a></p>
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">2011</span></h3>
+		</div>
+	</section>
+	<section class="themedemo"
+		data-background="/images/wc2013/tanstaafl.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">TANSTAAFL</span></h1>
+			<p class="verybig"><a href="http://tanstaafl.dankov.name">http://tanstaafl.dankov.name</a></p>
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">2011</span></h3>
+		</div>
+	</section>
+	<section class="themedemo"
+		data-background="/images/wc2013/initlab.jpg" 
+		data-background-repeat="no-repeat"
+		data-background-position="top"
+		data-background-size="100%"
+		data-background-transition="fade">
+		<div class="bottomleft">
+			<h1><span class="theme verybig">init Lab</span></h1>
+			<p class="verybig"><a href="http://initlab.org">http://initlab.org</a></p>
+		</div>
+		<div class="bottomright">
+			<h3><span class="date">2012</span></h3>
+		</div>
+	</section>
+	<section data-state="title">
+		<div class="center">
+			<h1>This doesn't look like WordPress?!</h1>
+		</div>
+		<aside class="notes" data-markdown></aside>
+	</section>
+	<section data-state="title">
+		<div class="center">
+			<h1><span class="bigger">Good or Bad?</span></h1>
+		</div>
+		<aside class="notes" data-markdown></aside>
+	</section>
+	
+</section>
+
+<section>
+	<section>
+		<div class="center">
+			<h1>What do we have to do?</h1>
+		</div>
+	</section>
+	<section>
+		<h1><div class="bigger">Developers &amp; Designers</div></h1>
+		<ol>
+			<li class="fragment bigger">More creativity, less copy and paste</li>
+			<li class="fragment bigger">Push yourselves outside of your comfort zone</li>
+			<li class="fragment bigger">Learn about each other's work</li>
+			<li class="fragment bigger">Read the WordPress codex, daily!</li>
+			<li class="fragment bigger">Colaborate</li>
+		</ol>
+	</section>
+	<section>
+		<h1><span class="bigger">Clients</span></h1>
+		<ol>
+			<li class="fragment bigger">Ask questions often</li>
+			<li class="fragment bigger">Talk through your ideas with the team. Listen to them!</li>
+		</ol>
+	</section>
+
+	<section>
+		<h1><span class="bigger">TANSTAAFL</span></h1>
+		<p>It takes time and work.</p> 
+	</section>
+	
+</section>
+
+<section>
+	<section>
+		<div class="bottomleft">
+			<h1><span class="verybig">Thank you!</span></h1>
+		</div>
+	</section>
+	<section>
+		<div class="bottomleft">
+			<h1><span class="verybig">Questions?</span></h1>
+		</div>
+	</section>
+	<section>
+		<div class="">
+
+			<br>
+			<h3><span class="bigger">Mail</span></h3>
+			<p class="verybig"><a href="mailto:konstantin.dankov@gmail.com">konstantin.dankov@gmail.com</a></p>
+
+			<br>
+			<h3><span class="bigger">Twitter</span></h3>
+			<table style="" class="verybig">
+				<tr>
+					<td style="padding-right: 1em;">@kdankov<br><span class="smaller">English</span></td>
+					<td>@thelazyperson<br><span class="smaller">Bulgarian</span></td>
+				</tr>
+			</table>
+			
+			<br><br>
+			<h3><span class="bigger">Slides</span></h3>
+			<p class="verybig"><a href="http://talks.thelazyperson.org/talks/this-doesnt-look-like-wordpress">http://talks.thelazyperson.org/talks/this-doesnt-look-like-wordpress</a></p>
+
+			<img src="/images/wc2013/wclogo.png" class="topright">
+			
+
+		</div>
+	</section>
 </section>
 
 

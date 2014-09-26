@@ -1,0 +1,292 @@
+---
+layout: wceu
+title:  "Styling the WordPress admin"
+date:   2014-09-27 11:30:00
+categories: talks
+---
+
+<!--
+
+data-state="something"
+
+data-background="#007777"
+data-background="image.png" data-background-repeat="repeat" data-background-size="100px"
+
+data-background-transition="slide"
+-->
+
+<section data-state="title">
+	<div class="bottomleft">
+		<h1>Styling the WordPress admin</h1>
+		<p><em>From changing the color scheme to custom design</em></p>
+	</div>
+
+	<img src="/images/wceu/logo.png" class="topright">
+	<aside class="notes" data-markdown></aside>
+</section>
+
+<section data-state="author">
+	<div class="bottomleft">
+		<p>by</p> 
+		<h1><span class="huge">Koko</span></h1>
+		<h4>Lazy CSS'er</h4>
+		<h4>Product Manager at Historypin</h4>
+		<p style="margin-top: -0.5em;">a community archive project based in London</p>
+
+		<table style="padding-top: 0.5em;">
+			<tr>
+				<td style="padding-right: 1em;">@kdankov<br><span class="smaller">English</span></td>
+				<td>@thelazyperson<br><span class="smaller">Bulgarian</span></td>
+			</tr>
+		</table>
+	</div>
+	<aside class="notes" data-markdown>
+		In order to save time, or just avoid trying to pronounce my name, people call me Koko. Every time, no exceptions! 
+	</aside>
+</section>
+
+<section>
+	<section>
+		<div class="center">
+			<h1><span class="huge">Why?</span></h1> 
+		</div>
+	</section>
+
+	<section>
+		<div class="center">
+			<h2><span class="big">Make it simpler, help the <span class="strike">client</span> user</span></h2> 
+		</div>
+	</section>
+	
+	<section>
+		<div class="center">
+			<h2><span class="big">Save time by optimizing workflows</span></h2> 
+		</div>
+	</section>
+
+	<section>
+		<div class="center">
+			<h2><span class="big">Create a branded experience</span></h2> 
+		</div>
+		<aside class="notes" data-markdown>
+			1. Clients take it more seriously - it looks differently than there personal blog admin!
+			1. Helps users with context
+		</aside>
+	</section>
+</section>
+
+<section>
+	<section>
+		<div class="center">
+			<h1><span class="huge">Why, not?!</span></h1> 
+		</div>
+	</section>
+
+	<section>
+		<div class="center">
+			<h2><span class="big">Support & Resources cost</span></h2> 
+		</div>
+		<aside class="notes" data-markdown>	
+			There is big community in WordPress and there is a lot of help out there. Changing your admin means that you might not be able to use a lot of that content.
+		</aside>
+	</section>
+	
+	<section>
+		<div class="center">
+			<h2><span class="big">Just for the fun of it</span></h2> 
+		</div>
+		<aside class="notes" data-markdown>	
+			1. This is a very good exercise in Front End work, but its not a sufficient reason to force a client to use a non-standard ui.
+		</aside>
+	</section>
+</section>
+
+<section>
+	<section>
+		<div class="topright">
+			<h2>Some customization ...</h2>
+		</div>
+		<div class="bottomleft">
+			<h1><span class="huge">Simplicity & Order</span></h1>
+		</div>
+	</section>
+
+	<section>
+		<div class="image-center">
+			<h2 class="ta-center">Default WP-Admin for Administrators</h2>
+			<img src="/images/wceu/default_dashboard-admin.png">
+		</div>
+	</section>
+
+	<section>
+		<div class="image-center">
+			<h2 class="ta-center">Default WP-Admin for Editors</h2>
+			<p><img src="/images/wceu/default_dashboard-editor.png"></p>
+			<p class="ta-center">Consider using WordPress admin as an Editor not an Admin</p>
+		</div>
+	</section>
+
+<section>
+<p>Lets create some CPTs and see how the admin changes</p>
+<pre><code class="php">function event_init() {
+	register_post_type( 'event', array(
+		...
+	) );
+}
+add_action( 'init', 'event_init' );
+</pre></code>
+</section>
+
+	<section>
+		<div class="image-center">
+			<p><img src="/images/wceu/default_dashboard-editor-withcpt.png"></p>
+			<p class="ta-center">Some badly placed Custom Post Types</p>
+		</div>
+	</section>
+
+<section>
+<p>When adding custom post types make sure they show at the right place.</p>
+<pre><code class="php">register_post_type( 'event', array(
+	...
+	'menu_position'	=> 5,
+	...
+))
+</pre></code>
+</section>
+
+	<section>
+		<div class="image-center">
+			<img src="/images/wceu/default_dashboard-editor-withcpt-order.png">
+		</div>
+	</section>
+
+<section>
+<p>Lets fix those annoying icons!</p>
+<pre><code class="php">register_post_type( 'event', array(
+	...
+	'menu_icon'	=> 'dashicons-calendar-alt',
+	...
+))
+</pre></code>
+<p><a href="http://melchoyce.github.io/dashicons/">http://melchoyce.github.io/dashicons/</a></p>
+</section>
+
+	<section>
+		<div class="image-center">
+			<img src="/images/wceu/default_dashboard-editor-withcpt-order-icon.png">
+		</div>
+	</section>
+
+	<section>
+		<p>Move "Pages" to the top</p>
+<pre><code class="php">add_filter("custom_menu_order", "allowMenuStructure");
+add_filter("menu_order", "loadMenuStructure");
+ 
+function allowMenuStructure() {
+    return true;
+}
+ 
+function loadMenuStructure() {
+    return array("index.php", "separator1", "edit.php?post_type=page", "edit.php");
+}
+</pre></code>
+		 <p><a href="http://www.sitepoint.com/admin-menus-in-wordpress/">http://www.sitepoint.com/admin-menus-in-wordpress/</a></p>
+	</section>
+
+	<section>
+		<div class="image-center">
+			<img src="/images/wceu/default_dashboard-fixed.png">
+		</div>
+	</section>
+
+	<section>
+		<p>Remove the Dashboard and setup a redirect</p>
+<pre><code class="php">function remove_menus(){
+	remove_menu_page('index.php');
+}
+add_action('admin_menu', 'remove_menus');
+
+function dashboard_Redirect(){
+	wp_redirect(admin_url('edit.php'));
+}
+add_action('load-index.php', 'dashboard_Redirect');
+</pre></code>
+	</section>
+
+		<section>
+		<div class="image-center">
+			<img src="/images/wceu/default_dashboard-fixed-nod.png">
+		</div>
+	</section>
+
+</section>
+
+
+
+<section>
+	<div class="image-center">
+		<h2 class="ta-center">Default WP-Admin Login</h2>
+		<img src="/images/wceu/default_login.png">
+	</div>
+</section>
+
+
+
+<section>
+	<section>
+		<div class="center">
+			<h1><span class="huge">Lets start with Branding</span></h1> 
+		</div>
+	</section>
+
+	<section>
+		<div class="center">
+			<h2>Tools</h2>
+		</div>
+
+		<section>
+			<h2>Discipline in testing</h2>
+		</section>
+
+		<section>
+			<h2>Quick look through the CSS structure of the admin.</h2> 
+		</section>
+		
+	</section>
+	
+</section>
+
+<section>
+	<section>
+		<div class="center">
+			<h1><span class="huge">Thank you!</span></h1>
+		</div>
+	</section>
+	<section>
+		<div class="bottomleft">
+			
+			<h2><span class="verybig">Questions?</span></h2>
+			<br>
+
+			<h3>Slides</h3>
+			<p class="big"><a href="http://talks.thelazyperson.org/talks/styling-the-wordpress-admin">http://talks.thelazyperson.org/talks/styling-the-wordpress-admin</a></p>
+
+			<br>
+			<h3>Mail</h3>
+			<p class="big"><a href="mailto:konstantin.dankov@gmail.com">konstantin.dankov@gmail.com</a></p>
+
+			<br>
+			<h3>Twitter</h3>
+			<table style="" class="big">
+				<tr>
+					<td style="padding-right: 1em;">@kdankov<br><span class="smaller">English</span></td>
+					<td>@thelazyperson<br><span class="smaller">Bulgarian</span></td>
+				</tr>
+			</table>
+			
+			<img src="/images/wceu/logo.png" class="topright">
+		</div>
+	</section>
+</section>
+
+

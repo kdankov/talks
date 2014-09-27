@@ -213,7 +213,7 @@ add_action('load-index.php', 'dashboard_Redirect');
 </pre></code>
 	</section>
 
-		<section>
+	<section>
 		<div class="image-center">
 			<img src="/images/wceu/default_dashboard-fixed-nod.png">
 		</div>
@@ -221,40 +221,124 @@ add_action('load-index.php', 'dashboard_Redirect');
 
 </section>
 
+<section>
+
+	<section>
+		<div class="topright">
+			<h2>Colors</h2>
+		</div>
+		<div class="bottomleft">
+			<h1><span class="huge">Adding a custom color scheme</span></h1>
+		</div>
+	</section>
+
+		<section>
+		<p>Register the new color scheme</p>
+<pre><code class="php">function additional_admin_color_schemes() {  
+    wp_admin_css_color( 'flat', __( 'Flat' ),  
+        plugins_url( 'colors/flat/flat.css', __FILE__ ),  
+        array( '#bdc3c7', '#d35400', '#f39c12', '#e74c3c' )  
+    );  
+}  
+add_action('admin_init', 'additional_admin_color_schemes'); 
+</pre></code>
+	</section>
+		<section>
+			<p>Select the new color scheme as default on user creation</p>
+<pre><code class="php">function set_default_admin_color($user_id) {  
+    $args = array(  
+        'ID' => $user_id,  
+        'admin_color' => 'flat'  
+    );  
+    wp_update_user( $args );  
+}  
+add_action('user_register', 'set_default_admin_color');
+</pre></code>
+	</section>
+
+	<section>
+		<div class="image-center">
+			<p><img src="/images/wceu/default_dashboard-fixed-colorscheme.png"></p>
+			<p class="ta-center">Good starting point at: <a href="http://themergency.com/generators/admin-color-scheme-generator/">http://themergency.com/generators/admin-color-scheme-generator/</a></p>
+		</div>
+	</section>
+
+</section>
+
 
 
 <section>
-	<div class="image-center">
-		<h2 class="ta-center">Default WP-Admin Login</h2>
-		<img src="/images/wceu/default_login.png">
+	<section>
+		<div class="topleft">
+			<h2>Login</h2>
+		</div>
+	</section>
+	<section>
+		<div class="image-center">
+			<img src="/images/wceu/default_login.png">
+		</div>
+	</section>
+
+	<section>
+		<p>Select the new color scheme as default on user creation</p>
+<pre><code class="php">function my_login_logo() { ?>
+    <style type="text/css">
+	body.login div#login h1 a {
+		width: 120px;
+		background-size: 120px;
+		margin: 0 auto;
+		background-image: url(&lt;?php echo plugins_url( 'images/logo.png', __FILE__ ); ?&gt;);
+	}
+    </style>
+&lt;?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+</pre></code>
+	</section>
+
+	<section>
+		<div class="image-center">
+			<img src="/images/wceu/default_login_logo.png">
+		</div>
+	</section>
+</section>
+
+<section>
+	<section>
+		<div class="topleft">
+			<h1><span class="huge">Ninja route</span></h1> 
+		</div>
+		<div class="bottomright">
+			<h2><span class="huge">Custom CSS</span></h2> 
+		</div>
+	</section>
+
+	<section>
+		<div class="topleft">
+			<h2>Tools</h2>
+			
+			<ul>
+				<li class="fragment huge">Sass</li>
+				<li class="fragment huge">Grunt</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<section>
+		<div class="center">
+			<h2>Discipline in testing</h2>
+		</div>
+	</section>
+</section>
+
+
+<section>
+	<div class="center">
+		<h1>What was all this about then?!</h1>
 	</div>
 </section>
 
 
-
-<section>
-	<section>
-		<div class="center">
-			<h1><span class="huge">Lets start with Branding</span></h1> 
-		</div>
-	</section>
-
-	<section>
-		<div class="center">
-			<h2>Tools</h2>
-		</div>
-
-		<section>
-			<h2>Discipline in testing</h2>
-		</section>
-
-		<section>
-			<h2>Quick look through the CSS structure of the admin.</h2> 
-		</section>
-		
-	</section>
-	
-</section>
 
 <section>
 	<section>

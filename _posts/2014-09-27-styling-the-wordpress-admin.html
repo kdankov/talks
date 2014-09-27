@@ -164,7 +164,7 @@ add_action( 'init', 'event_init' );
 <p>Lets fix those annoying icons!</p>
 <pre><code class="php">register_post_type( 'event', array(
 	...
-	'menu_icon'	=> 'dashicons-calendar-alt',
+	'menu_icon' => 'dashicons-calendar-alt',
 	...
 ))
 </pre></code>
@@ -269,11 +269,12 @@ add_action('user_register', 'set_default_admin_color');
 
 <section>
 	<section>
-		<div class="topleft">
-			<h2>Login</h2>
+		<div class="center">
+			<p><span class="huge">WP Login</span></p>
 		</div>
 	</section>
 	<section>
+		<p>&nbsp;</p>
 		<div class="image-center">
 			<img src="/images/wceu/default_login.png">
 		</div>
@@ -296,6 +297,7 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 	</section>
 
 	<section>
+		<p>&nbsp;</p>
 		<div class="image-center">
 			<img src="/images/wceu/default_login_logo.png">
 		</div>
@@ -305,7 +307,7 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 <section>
 	<section>
 		<div class="topleft">
-			<h1><span class="huge">Ninja route</span></h1> 
+			<h1><span class="huge">We are Ninjas!</span></h1> 
 		</div>
 		<div class="bottomright">
 			<h2><span class="huge">Custom CSS</span></h2> 
@@ -314,31 +316,121 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 	<section>
 		<div class="topleft">
-			<h2>Tools</h2>
+			<div class="center">
+				<h1>Bofore you jump</h1>
+				<p>Make sure the rope is attached</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="topleft">
+			<h1>Before you jump</h1>
+			<ol>
+				<li>
+					Read the styles, make sure you have at least a fundamental understanding of the structure<br>
+					../wordpress/wp-admin/css <br><br>
+
+					63 CSS files, not counting the color schemes
+					<br><br>
+				</li>
+				<li>
+					Read documentation on the subject:<br>
+					<a href="http://codex.wordpress.org/Creating_Admin_Themes">http://codex.wordpress.org/Creating_Admin_Themes</a>
+				</li>
+			</ol>
+		</div>
+	</section>
+	
+	<section>
+		<div class="topleft">
+			<h1>Tools</h1>
 			
 			<ul>
-				<li class="fragment huge">Sass</li>
-				<li class="fragment huge">Grunt</li>
+				<li>
+					Sass<br>
+					<a href="http://sass-lang.com/">http://sass-lang.com/</a>
+					<br><br>
+				</li>
+				<li>
+					Compass for Sass<br>
+					<a href="http://compass-style.org/">http://compass-style.org/</a>
+					<br><br>
+				</li>
+				<li>
+					Susy Grid system for Sass &amp; Compass<br>
+					http://susy.oddbird.net/
+					<br><br>
+				</li>
+				<li>
+					Grunt<br>
+					<a href="http://gruntjs.com/">http://gruntjs.com/</a>
+				</li>
 			</ul>
 
 		</div>
 	</section>
 
+
+	<section>
+		<div class="center">
+			<h1>Lets break it!</h1>
+		</div>
+	</section>
+
+
+	<section>
+		<p>Remove the default styles</p>
+<pre><code class="php">function sidrix_remove_admin_styles() {
+	wp_deregister_style('wp-admin');
+}
+add_action('admin_init','sidrix_remove_admin_styles');
+</code></pre>
+	</section>
+
+	<section>
+		<p>&nbsp;</p>
+		<div class="image-center">
+			<img src="/images/wceu/dashboard_nostyles.png">
+		</div>
+	</section>
+
+	<section>
+	<p>Add our own CSS</p>
+<pre><code class="php">wp_enqueue_style( 'sidrix', plugins_url( 'css/admin.css', __FILE__ ) );
+</code></pre>
+	</section>
+	
+	<section>
+		<p>&nbsp;</p>
+		<div class="image-center">
+			<img src="/images/wceu/custom-bgrd.png">
+		</div>
+	</section>
+	
 	<section>
 		<div class="center">
 			<h2>Discipline in testing</h2>
 		</div>
 	</section>
+
+	<section>
+		<div class="image-center">
+			<h1 class="ta-center">Pattern Lab</h1>
+			<p><img src="/images/wceu/patternlab.png"></p>
+			<p class="ta-center">Atomic design is a methodology used to construct web design systems.</p>
+		</div>
+	</section>
+
+
 </section>
 
 
 <section>
 	<div class="center">
-		<h1>What was all this about then?!</h1>
+		<h1>So, should we do it or not?!</h1>
 	</div>
 </section>
-
-
 
 <section>
 	<section>

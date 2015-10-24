@@ -33,7 +33,13 @@
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-body { background: #409e44; }
+body {
+  background: -webkit-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #136a8a 10%, #267871 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #136a8a 10%, #267871 90%); /* W3C */
+}
 
 .reveal {
   font-family: "Open Sans Condensed", Helvetica, sans-serif;
@@ -62,7 +68,7 @@ body { background: #409e44; }
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #FFF;
+  color: orange;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;

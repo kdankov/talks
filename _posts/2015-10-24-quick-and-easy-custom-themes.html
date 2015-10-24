@@ -1,0 +1,168 @@
+---
+layout: wc2013
+title:  "Quick and easy custom themes with _s, wp-cli, gulp and sass"
+date:   2015-10-24 17:20:00
+categories: talks
+---
+
+
+<!--
+
+data-state="something"
+
+data-background="#007777"
+data-background="image.png" data-background-repeat="repeat" data-background-size="100px"
+
+data-background-transition="slide"
+-->
+
+<section data-state="title">
+	<div class="topleft">
+		<h1>
+			<span class="verybig">
+				Quick and easy custom themes with:<br> _s, wp-cli, gulp and sass
+			</span>
+		</h1>
+	</div>
+	<div class="bottomright">
+		<p>WordCamp Sofia 2015</p>
+	</div>
+
+	<aside class="notes" data-markdown></aside>
+</section>
+
+<section data-state="author">
+	<div class="bottomleft">
+		<h1><span class="smaller">by</span> <span class="huge">Konstantin Dankov</span></h1>
+		<h3>Product Manager @ Historypin</h3>
+
+		<table style="padding-top: 0.5em;">
+			<tr>
+				<td style="padding-right: 1em;">@kdankov<br><span class="smaller">English</span></td>
+				<td>@thelazyperson<br><span class="smaller">Bulgarian</span></td>
+			</tr>
+		</table>
+	</div>
+	<aside class="notes" data-markdown>
+		In order to save time, or just avoid trying to pronounce my name, people call me Koko. Every time, no exceptions! 
+	</aside>
+</section>
+
+<section>
+	<section data-transition="fade">
+		<div class="center">
+			<h1>
+				<span class="verybig">
+					So, what is this about?
+				</span>
+			</h1>
+		</div>
+	</section>
+	<section>
+		<div class="center">
+			<h1>
+				<span class="verybig">
+					Themes and Custom themes
+				</span>
+			</h1>
+		</div>
+	</section>
+	<section>
+		<h1>
+			<span class="verybig">
+				Opinions, Opinions ...
+			</span>
+		</h1>
+	</section>
+	<section>
+		<h1><span class="verybig">The Pareto principle</span></h1>
+		<p>Originally, the Pareto Principle referred to the observation that 80% of Italy’s wealth belonged to only 20% of the population.</p>
+		<p>More generally, the Pareto Principle is the observation (not law) that most things in life are not distributed evenly.</p>
+
+		<div class="bottomleft fragment">
+			<h3>Life is unfair!</h3>
+		</div>
+	</section>
+	<section>
+		<h1><span class="verybig">Story time</span></h1>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h1><span class="verybig">Ok, Lets look at what we are using</span></h1> 
+		<br>
+		<h4 class="fragment">First, a diclaimer! I use OS X.</h4> 
+	</section>
+	<section data-transition="fade">
+		<h1><span class="verybig">Ok, Lets look at what we are using</span></h1> 
+		<br>
+		<h4 class="fragment">- <a href="https://www.virtualbox.org/">Virtualbox</a> and <a href="https://www.vagrantup.com/">Vagrant</a> for virtual machine management</h4> 
+		<h4 class="fragment">- <a href="https://github.com/Varying-Vagrant-Vagrants/VVV">VVV</a> for provisioning the machine for WordPress develomnet</h4> 
+		<h4 class="fragment">- <a href="https://github.com/bradp/vv">Variable VVV</a> for creating new sites</h4> 
+		<h4 class="fragment">- --- --- ---</h4> 
+		<h4 class="fragment">- <a href="http://wp-cli.org/">wp-cli</a> to generate a new custom theme based on _s</h4> 
+		<h4 class="fragment">- <a href="https://nodejs.org/en/">nodejs</a> to run gulp</h4> 
+		<h4 class="fragment">- <a href="http://gulpjs.com/">gulp</a> and a list of plugins to compile SASS</h4> 
+		<h4 class="fragment">- <a href="http://www.browsersync.io/">browsersync</a> to help us with testing on multiple devices</h4> 
+	</section>
+	<section>
+		<div class="center">
+			<h3>This is where I ask some questions.</h3>
+		</div>
+	</section>
+	<section data-transition="fade">
+		<h1><span class="verybig">Ok, Lets look at what we are using</span></h1> 
+		<br>
+		<h4 class="fragment">- <a href="https://www.virtualbox.org/">Virtualbox</a> and <a href="https://www.vagrantup.com/">Vagrant</a> for virtual machine management</h4> 
+		<h4 class="fragment">- <a href="https://github.com/Varying-Vagrant-Vagrants/VVV">VVV</a> for provisioning the machine for WordPress develomnet</h4> 
+		<h4 class="fragment">- <a href="https://github.com/bradp/vv">Variable VVV</a> for creating new sites</h4> 
+		<h4 class="fragment">- --- --- ---</h4> 
+		<h4 class="fragment">- <a href="http://wp-cli.org/">wp-cli</a> to generate a new custom theme based on _s</h4> 
+		<h4 class="fragment">- <a href="https://nodejs.org/en/">nodejs</a> to run gulp</h4> 
+		<h4 class="fragment">- <a href="http://gulpjs.com/">gulp</a> and a list of plugins to compile SASS</h4> 
+		<h4 class="fragment">- <a href="http://www.browsersync.io/">browsersync</a> to help us with testing on multiple devices</h4> 
+	</section>
+</section>
+
+<section>
+	<section>
+		<div class="bottomleft">
+			<h1><span class="huge">Demo time!</span></h1>
+		</div>
+		<aside class="notes" data-markdown></aside>
+	</section>
+</section>
+
+<section>
+	<section>
+		<div class="bottomleft">
+			<h1><span class="verybig">Thank you!</span></h1>
+		</div>
+	</section>
+	<section>
+		<div class="topright">
+			<h1><span class="verybig">Questions?</span></h1>
+		</div>
+		<div class="bottomright">
+			<p>WordCamp Sofia 2015</p>
+		</div>
+		<div class="">
+			<br>
+			<h3><span class="bigger">Mail</span></h3>
+			<p class="verybig"><a href="mailto:konstantin.dankov@gmail.com">konstantin.dankov@gmail.com</a></p>
+
+			<br>
+			<h3><span class="bigger">Twitter</span></h3>
+			<table style="" class="verybig">
+				<tr>
+					<td style="padding-right: 1em;">@kdankov<br><span class="smaller">English</span></td>
+					<td>@thelazyperson<br><span class="smaller">Bulgarian</span></td>
+				</tr>
+			</table>
+
+		</div>
+	</section>
+</section>
+
+

@@ -1,6 +1,6 @@
-name: Презентациите на Мързеливеца
+name: "Презентациите на Мързеливеца"
 markdown: redcarpet
-pygments: true
-
+highlighter: true
 permalink: /:title/
+future: true
 
